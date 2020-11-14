@@ -1,5 +1,6 @@
 {
     "files.associations": {
         "Triangle area.C": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
 }
