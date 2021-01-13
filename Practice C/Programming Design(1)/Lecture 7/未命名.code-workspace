@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../Practice Html"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"Triangle area.C": "cpp"
+		},
+		"liveServer.settings.multiRootWorkspaceName": "Practice Html"
+	}
+}

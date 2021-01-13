@@ -3,7 +3,7 @@
 int main(void){
     char c;
     int count = 0 ;
-    for(int i =1 ; c !='\n' ; i++){
+    for(int i =1 ; ; i++){
         c= getchar();
         if(c==' '){
             count++;

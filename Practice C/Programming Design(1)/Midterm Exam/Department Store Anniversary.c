@@ -7,20 +7,23 @@ int main(void){
     for(int i = 0 ;i<m+n;i++){
         scanf("%d",&a[i]);
     }
-    for(int j =0 ; j<m+n ; j++){
-        if(a[j]>a[j+1]){
-            int temp = a[j+1];
-            a[j+1]=a[j];
-            a[j]=temp;
-            j++;
-            continue;
-        }
-        else {
-            a[j]=a[j];
+    for(int x = 0;x<m+n;x++){
+        for(int j =1 ; j<m+n ; j++){
+            if(a[x]>a[j]){
+                int temp = a[j];
+                a[j]=a[x];
+                a[x]=temp;
+                j++;
+                continue;
+            }   
+            else {
+                a[j]=a[j];
+            }
         }
     }
     for(int k = 0;k<m+n;k++){
         printf("%d ",a[k]);
     }
+    
 
 }

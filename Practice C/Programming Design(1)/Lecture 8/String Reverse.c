@@ -1,9 +1,12 @@
 #include<stdio.h>
 int main(void){
     int i ;
-    char a[j] ;
-    for(int j=0;j<=i;j++){
-        a[j]= a[i-j-1] ;
-        printf("%c",a[j]);
+    scanf("%d\n",&i);
+    char a[i] ;
+    for(int j=0;j<=i-1;j++){
+        a[j]=getchar();
+    }
+    for(int k=(i-1);k>=0;k--){
+        printf("%c",a[k]);
     }
 }
