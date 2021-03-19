@@ -28,19 +28,16 @@ int main(void) {
     return 0;
 }
 int cmp(const void* a, const void* b) {
-    int arg1 = *(const int*)a;
-    int arg2 = *(const int*)b;
+    struct message_info *aptr = (struct message_info *)a;
+    struct message_info *bptr = (struct message_info *)b; 
 
-    if (arg1 < arg2) return -1;
-    if (arg1 > arg2) return 1;
+    if ((aptr->time.hour < bptr->time.hour)||((aptr->time.hour==bptr->time.hour)&&(aptr->time.minute<bptr->time.minute))) return -1;
+    if ((aptr->time.hour > bptr->time.hour)||((aptr->time.hour==bptr->time.hour)&&(aptr->time.minute>bptr->time.minute))) return 1;
     return 0;
 }
 
 void sort_message(struct message_info *m, int *total) {
 // m is array of each message information wrapped in a struct
 // total is the number of total message
-    int *ptr = m;
-    for (i = 0; i < total ; i++){
-        
-    }
+    qsort(m,*total,sizeof(struct message_info),cmp);
 }

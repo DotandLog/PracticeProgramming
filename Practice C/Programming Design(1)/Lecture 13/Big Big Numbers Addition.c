@@ -5,7 +5,7 @@ void add(char a[], char b[], char res[]){
     {
         while(a[i] != '\n')
         {
-           counta++;
+            counta++;
         }
         break;
     }
@@ -13,7 +13,7 @@ void add(char a[], char b[], char res[]){
     {
         while(b[i] != '\n')
         {
-           countb++;
+            countb++;
         }
         break;
     }
